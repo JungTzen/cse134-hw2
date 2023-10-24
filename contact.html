@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8" />
     <title>Contact</title>
 </head>
 <body>
@@ -14,34 +15,104 @@
                 <li><a href="documents.html">LET'S GET PROFESSIONAL</a></li>
             </ul>
         </nav>
+    </header>
+    <main>
+        <p>Here's some relaxing music and a video flowing water to soothe you will you fill out the form :&#41;</p>
+        <audio controls>
+            <source src="/media/birds.mp3" type="audio/mp3">
+        </audio>
+        <br>
+        <video width="300" height="300"  controls>
+            <source src="/media/water.mp4" type="video/mp4">
+        </video>
 
         <p>Feel free to put down any comments or concerns you have below!</p>
-    </header>
-    <form>
-        <fieldset>
-            <legend>Connect with me!</legend>
-            <label>Did you like the website?</label>
-            <input type="radio" id="yes" name="rating">
-            <label for="yes">YES :&#40;</label>
-            <input type="radio" id="not bad" name="rating">
-            <label for="not bad">Could use some work...</label>
-            <input type="radio" id="no" name="rating">
-            <label for="yes">NO :&#41; </label>
+        <br>
+        <form>
+            <fieldset>
+                <legend>Connect with me!</legend>
+                <label>Did you like the website?</label>
+                <input type="radio" id="yes" name="rating">
+                <label for="yes">YES :&#40;</label>
+                <input type="radio" id="not bad" name="rating">
+                <label for="not bad">Could use some work...</label>
+                <input type="radio" id="no" name="rating">
+                <label for="yes">NO :&#41; </label>
+                <hr>
+                <label for="name">What's your name? &#40;put N/A if you are not comfortable with sharing&#41;</label>
+                <br>
+                <textarea id="name">Enter your name here...</textarea>
+                <hr>
+                <label for="name">What's your LinkedIn? &#40;put N/A if you are not comfortable with sharing or don't have one&#41;</label>
+                <br>
+                <textarea id="name">Enter your LinkedIn here...</textarea>
+                <hr>
+                <label for="outreach">How did you find out about my website?</label>
+                <datalist id="outreach">
+                    <option value="Friend"></option>
+                    <option value="Family"></option>
+                    <option value="LinkedIn"></option>
+                    <option value="Social Media"></option>
+                    <option value="Referral"></option>
+                    <option value="Other"></option>
+                </datalist>
+                <input list="outreach" id="outreach" />
+                <hr>
 
-            <br>
+                <label for="animal">What kind of animal do you think you are?</label>
+                <select id="animal">
+                    <optgroup label="Reptile">
+                        <option value="dino">Dinosaur</option>
+                        <option value="croc">Crocodile</option>
+                        <option value="lizard">Lizard</option>
+                        <option value="snake">Snake</option>
+                        <option value="turtle">Turtle</option>
+                    </optgroup>
+                    <optgroup label="Mammal">
+                        <option value="elephant">Elephant</option>
+                        <option value="big_cat">Big Cat</option>
+                        <option value="hippo">Hippo</option>
+                        <option value="dolphin">Dolphin</option>
+                        <option value="monkey">Monkey</option>
+                    </optgroup>
+                    <optgroup label="Bird">
+                        <option value="sparrow">Sparrow</option>
+                        <option value="pigeon">Pigeon</option>
+                        <option value="pelican">Pelican</option>
+                        <option value="parrot">Parrot</option>
+                        <option value="songbird">Songbird</option>
+                    </optgroup>
+                    <optgroup label="Amphibian">
+                        <option value="frog">Frog</option>
+                        <option value="toad">Toad</option>
+                        <option value="salamander">Salamander</option>
+                        <option value="newt">Newt</option>
+                        <option value="Axolotl">Axolotl</option>
+                    </optgroup>
+                    <optgroup label="Fish">
+                        <option value="shark">Shark</option>
+                        <option value="flounder">Flounder</option>
+                        <option value="salmon">Salmon</option>
+                        <option value="goldfish">Goldfish</option>
+                        <option value="sardine">Sardine</option>
+                    </optgroup>
+                    <optgroup label="Insect">
+                        <option value="ant">Ant</option>
+                        <option value="butterfly">Butterfly</option>
+                        <option value="beetle">Beetle</option>
+                        <option value="ladybug">Ladybug</option>
+                        <option value="bee">Bee</option>
+                    </optgroup>
+                    <option value="other">My animal was not here :&#40;</option>
+                </select>
+                <hr>
+                <button type="save_info">Save</button>
 
-            <label for="name">What's your name? &#40;put N/A if you are not comfortable with sharing&#41;</label>
-            <textarea id="name">Enter your name here...</textarea>
-
-            <br>
-
-            <label for="name">What's your LinkedIn? &#40;put N/A if you are not comfortable with sharing or don't have one&#41;</label>
-            <textarea id="name">Enter your LinkedIn here...</textarea>
-
-            <br>
-
-        </fieldset>
-    </form>
-
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>Thanks for checking out my page!</p>
+    </footer>
 </body>
 </html>
