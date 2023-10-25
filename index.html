@@ -33,13 +33,13 @@
 
                 <p>Here's some cool <i>V I S U A L</i>!</p>
 
-                <p><strong>THIS IS A CIRCLE IN AN SVG TAG!</strong></p>
+                <p><strong>CIRCLE IN AN SVG TAG!</strong></p>
 
                 <svg width="100" height="100">
                     <circle cx="50" cy="50" r="40" fill="mediumseagreen" />
                 </svg>
                 <hr>
-                <p><strong>THIS IS A CIRCLE IN A CANVAS TAG!</strong></p>
+                <p><strong>CIRCLE IN A CANVAS TAG!</strong></p>
                 <canvas id="my_art" width="300" height="200" style="border:1px solid #000000;"></canvas>
                 <script>
                     var c = document.getElementById("my_art");
@@ -49,28 +49,24 @@
                     ctx.fillStyle = "mediumseagreen";
                     ctx.fill()
                 </script>
-
                 <hr>
-
+                <p><strong>code tag demo</strong></p>
                 <p>Below is how you would print "Hello World" in Python:</p>
                 <code>print("Hello World")</code>
-
                 <hr>
-
+                <p><strong>div tag demo</strong></p>
                 <div class="example-div">
                     <p>I am too scared to put div tags anywhere else but here!</p>
                     <p>This is inside a div tag under the class "example-div"</p>
                 </div>
-
                 <template id="template_tag_demo">
                     <p>This is an example of a template tag</p>
                 </template>
-
                 <hr>
-
+                <p><strong>span tag demo</strong></p>
                 <p>This is a span demo, <span class="span_demo">this is inside the span tag</span>.</p>
-
             </section>
+            <hr>
             <section>
                 <h2>Extra Credit</h2>
                 <p>Fun Fact MathML works in HTML! Here's an example:</p>
@@ -84,9 +80,14 @@
                             <mn>2</mn>
                         </msup>
                 </math>
+                <br>
+                <p>MathML was recently put in place due to its unstable past. It was originally supported on Chrome 24 but was temporarily removed after. Users had to use applications such as MathJax as an alternative to MathML. My assumption of why MathML took a while for its modern-day implementation into Chrome is 
+                    due to the complexity of make it accessible and accurate for all users. Developers have attempted to implement MathML previous but ran into issues and now devs have to take into account the many different device profiles and the accuracy in interpreting mathematical notations and rendering it in HTML. 
+                    Lastly, there is also the possibility that developers had to focus on other issues/needs of Chrome which are more pressing than implementing MathML.
+                </p>
             </section>
         </main>
-
+        <hr>
         <footer>
             <p>Thanks for checking out my page!</p>
         </footer>
