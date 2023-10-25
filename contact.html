@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Contact</title>
 </head>
 <body>
@@ -36,8 +36,8 @@
                 <label>Did you like the website?</label>
                 <input type="radio" id="yes" name="rating">
                 <label for="yes">YES :&#40;</label>
-                <input type="radio" id="not bad" name="rating">
-                <label for="not bad">Could use some work...</label>
+                <input type="radio" id="not_bad" name="rating">
+                <label for="not_bad">Could use some work...</label>
                 <input type="radio" id="no" name="rating">
                 <label for="yes">NO :&#41; </label>
                 <hr>
@@ -49,12 +49,13 @@
                 <br>
                 <input type="email" id="email" placeholder="example@gmail.com">
                 <hr>
-                <label for="name">What's your LinkedIn? &#40;put N/A if you are not comfortable with sharing or don't have one&#41;</label>
+                <label for="linkedin">What's your LinkedIn? &#40;put N/A if you are not comfortable with sharing or don't have one&#41;</label>
                 <br>
-                <textarea id="name">Enter your LinkedIn here...</textarea>
+                <textarea id="linkedin">Enter your LinkedIn here...</textarea>
                 <hr>
-                <label for="outreach">How did you find out about my website?</label>
-                <datalist id="outreach">
+                <label for="outreach_input">How did you find out about my website?</label>
+                <input list="outreach_options" id="outreach_input">
+                <datalist id="outreach_options">
                     <option value="Friend"></option>
                     <option value="Family"></option>
                     <option value="LinkedIn"></option>
@@ -62,7 +63,6 @@
                     <option value="Referral"></option>
                     <option value="Other"></option>
                 </datalist>
-                <input list="outreach" id="outreach" />
                 <hr>
 
                 <label for="animal">What kind of animal do you think you are?</label>
@@ -112,7 +112,7 @@
                     <option value="other">My animal was not here :&#40;</option>
                 </select>
                 <hr>
-                <button type="save_info">Save</button>
+                <button type="submit">Save</button>
 
             </fieldset>
         </form>
